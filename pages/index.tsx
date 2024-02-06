@@ -2,7 +2,7 @@ import Link from "next/link";
 import Layout from "../components/Layout";
 
 const IndexPage = () => (
-  <Layout title="Coming Soon - Clean Coming Soon Page (Tailwind CSS, NextJs & HTML5) created by themeptation.net">
+  <Layout title="Coming Soon - what.gift">
     <img
       src="/images/xera.svg"
       alt="Themeptation "
@@ -18,16 +18,18 @@ const IndexPage = () => (
         <h3 className="font-light text-xl uppercase tracking-wider">
           Coming soon
         </h3>
-        <h1 className="text-7xl lg:text-9xl font-extrabold">We’r blowing up</h1>
+        <h1 className="text-7xl lg:text-9xl font-extrabold text-purple-800">Find Gifts, Create Lists.</h1>
         <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
-          We`re under construction. Check back for an update soon. Stay in
-          touch!
+          We`re under construction. 
+        </p>
+        <p className="text-xl lg:text-2xl tracking-wide mx-10 lg:max-w-xl lg:mx-auto">
+          Join the waitlist to be the first in.
         </p>
       </div>
       <form className="relative z-10 mx-10 lg:max-w-xl lg:mx-auto">
         <input
           type="text"
-          placeholder="hi@themeptation.net"
+          placeholder="Your email"
           className="w-full text-2xl font-light text-gray-900 placeholder-gray-500 py-5 pl-5 pr-36 lg:pr-44 rounded-xl"
         />
         <button className="absolute top-1 right-1 bottom-1 px-4 lg:px-10 text-xl font-semibold bg-gray-900 text-white rounded-xl transition ease-in-out duration-500 hover:bg-red-500">
@@ -35,11 +37,13 @@ const IndexPage = () => (
         </button>
       </form>
     </div>
+
+    {/* Footer links */}
     <div className="absolute bottom-5">
       <ul className="flex space-x-3">
         <li>
-          <Link href="https://themeptation.net">
-            <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
+          <Link href="https://www.instagram.com/what_gift/">
+            <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg" target="_blank">
               <svg
                 className="w-6 h-6"
                 fill="currentColor"
@@ -55,7 +59,7 @@ const IndexPage = () => (
             </a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="https://themeptation.net">
             <a className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-50 transition ease-in-out duration-500 hover:bg-red-500 hover:text-white hover:shadow-lg">
               <svg
@@ -104,7 +108,7 @@ const IndexPage = () => (
               </svg>
             </a>
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   </Layout>
